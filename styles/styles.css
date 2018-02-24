@@ -32,6 +32,7 @@ header {
 .vertical-menu {
     width: 200px; /* Set a width if you like */
     margin-left: 20px;
+    position: fixed;
 }
 
 .vertical-menu a {
@@ -71,6 +72,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  padding-top: 100px;
   opacity: .50;
 }
 
@@ -81,4 +83,29 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 24%;
+}
+
+footer {
+  height: 40px;
+  text-align: center;
+}
+
+#social-media {
+  display: inline-block;
+  text-align: center;
+  zoom: 10%;
+}
+
+#instagram {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  float: left;
+}
+
+#pinterest {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  float: right;
 }
