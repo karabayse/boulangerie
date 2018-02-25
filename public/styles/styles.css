@@ -104,3 +104,48 @@ footer {
   padding-left: 10px;
   float: right;
 }
+
+
+
+/*** MACARONS ***/
+
+#macarons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+/*** CAKE ***/
+
+#bundt-cake {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+/*** PIE ***/
+
+#pie {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+/*** COFFEE ***/
+
+#fancy-coffee {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
