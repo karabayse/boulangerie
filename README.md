@@ -1,5 +1,5 @@
 ![Boulangerie Home Page](boulangerie-home.png)
 
-# boulangerie
+# Boulangerie
 
 Bakery proof of concept
