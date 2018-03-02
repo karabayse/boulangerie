@@ -16,8 +16,12 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+
+
+/*** SITE ***/
+
 header {
-  height: 30px;
+  position: fixed;
 }
 
 #boulangerie {
@@ -31,6 +35,8 @@ header {
     width: 200px;
     margin-left: 20px;
     position: fixed;
+    float: left;
+    z-index: 0;
 }
 
 .vertical-menu a {
@@ -48,17 +54,271 @@ header {
 
 .vertical-menu a.active {
     background-color: #8B5F65; /* add a color to the "active/current" link */
-    color: #515151;
+    /* color: #CFCFCF; */
+    color: White;
+  }
+
+.container {
+  position: relative;
+  z-index: 2;
 }
+
+.page-heading {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Parisienne;
+  /* color: #787878; */
+  color: White;
+  text-align: center;
+  font-size: 30px;
+  background: #495C70;
+  width: 50%;
+}
+
+hr {
+  height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+  border: 0;
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+
+/*** ABOUT ***/
+
+#francoise-boulanger {
+  color: #787878;
+  font-family: Futura;
+  text-align: center;
+}
+
+.jumbotron {
+  border-radius: 0;
+}
+
+#coffee-and-peonies {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* float: right; */
+}
+
+
+
+/*** BAKERY ***/
+
+#macarons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  float: right;
+}
+
+#macarons-2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 70%;
+  float: right;
+}
+
+#pie {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+#eggs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 80%;
+  /* float: right; */
+}
+
+
+
+/*** CAFE ***/
+
+#carnation {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  float: right;
+}
+
+#bundt-cake {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#silverware {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  float: right;
+}
+
+#waffles-and-cherries {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  float: right;
+}
+
+#sandwich {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 70%;
+  float: right;
+}
+
+#menu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: Parisienne;
+  font-size: 20px;
+  color: White;
+  text-align: center;
+  background: #495C70;
+}
+
+#cafe-interior {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+
+/*** CONTACT ***/
+
+#hot-chocolate {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+}
+
+.form-style-4{
+    width: 450px;
+    font-size: 16px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+}
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label
+{
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+    font-family: Futura;
+    font-size: 16px;
+    color: #fff;
+
+}
+.form-style-4 label {
+    display:block;
+    margin-bottom: 10px;
+}
+.form-style-4 label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+.form-style-4 input[type=text],
+.form-style-4 input[type=email]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+.form-style-4 textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+.form-style-4 textarea:focus,
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus
+{
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button]{
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #A8BACE;
+}
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover{
+background: #394D61;
+}
+
+#send-letter-button {
+  font-family: Parisienne;
+  font-size: 20px;
+  color: White;
+}
+
+
+
+/*** HOME ***/
 
 .main-image {
   margin-top: -2em;
-  min-height: 953px;
+  /* min-height: 953px; */
+  min-height: 850px;
+  /* height: 100vh; */
+  /* height: 80vh; */
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
     ),
-  url("../styles/images/colored-tiles.jpg") no-repeat center center fixed;
+  url("../styles/images/home/colored-tiles.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -80,11 +340,6 @@ header {
   text-align: center;
 }
 
-footer {
-  height: 40px;
-  text-align: center;
-}
-
 #social-media {
   display: inline-block;
   text-align: center;
@@ -103,77 +358,4 @@ footer {
   margin-right: auto;
   padding-left: 10px;
   float: right;
-}
-
-
-
-/*** MACARONS ***/
-
-#macarons {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-#macarons-2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-
-
-/*** CAKE ***/
-
-#bundt-cake {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-#carnation {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-
-
-/*** PIE ***/
-
-#pie {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-#cinnamon-rolls {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-
-
-
-/*** COFFEE ***/
-
-#fancy-coffee {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-#hot-chocolate {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 }

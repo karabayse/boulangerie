@@ -7,20 +7,20 @@ myApp.config(function($routeProvider, $locationProvider) {
     templateUrl: 'views/home.html',
     controller: 'BakeryController',
     controllerAs: 'BakeryController as bc'
-  }).when('/macarons', {
-    templateUrl: 'views/macarons.html',
+  }).when('/contact', {
+    templateUrl: 'views/contact.html',
     controller: 'BakeryController',
     controllerAs: 'BakeryController as bc'
-  }).when('/cake', {
-    templateUrl: 'views/cake.html',
+  }).when('/cafe', {
+    templateUrl: 'views/cafe.html',
     controller: 'BakeryController',
     controllerAs: 'BakeryController as bc'
-  }).when('/pie', {
-    templateUrl: 'views/pie.html',
+  }).when('/bakery', {
+    templateUrl: 'views/bakery.html',
     controller: 'BakeryController',
     controllerAs: 'BakeryController as bc'
-  }).when('/coffee', {
-    templateUrl: 'views/coffee.html',
+  }).when('/about', {
+    templateUrl: 'views/about.html',
     controller: 'BakeryController',
     controllerAs: 'BakeryController as bc'
   }).otherwise('/');
