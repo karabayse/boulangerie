@@ -81,6 +81,47 @@ hr {
   border: 0;
 }
 
+.menu-heading {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  font-family: Parisienne;
+  font-size: 30px;
+  color: White;
+  text-align: center;
+  background: #495C70;
+}
+
+#cupcake-menu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  zoom: 15%;
+  opacity: .50;
+}
+
+.menu {
+  font-family: Futura;
+  /* color: #787878; */
+  color: #5C5C5C;
+  min-height: 850px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+  url("../styles/images/menu/silverware.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.menu-content {
+  text-align: center;
+}
+
 footer {
   height: 40px;
   width: 100%;
@@ -209,18 +250,6 @@ footer {
   float: right;
 }
 
-#menu {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* width: 50%; */
-  font-family: Parisienne;
-  font-size: 20px;
-  color: White;
-  text-align: center;
-  background: #495C70;
-}
-
 #cafe-interior {
   display: block;
   margin-left: auto;
@@ -340,7 +369,7 @@ background: #394D61;
   background-size: cover;
 }
 
-#cupcake {
+#cupcake-home {
   display: block;
   margin-left: auto;
   margin-right: auto;
