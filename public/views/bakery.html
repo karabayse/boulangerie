@@ -47,14 +47,35 @@
 <hr>
 
 <div class="menu">
-  <img id="cupcake-menu" src="styles/images/icons/cupcake.png" alt="cupcake icon">
-  <br>
 
   <div class="row">
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
       <div class="menu-content">
-        <p>Bakery Menu Coming Soon!</p>
+
+        <div class="form">
+          <form class="form-style-4" id="bakery-form" method="post">
+            <img id="cupcake-menu" src="styles/images/icons/cupcake.png" alt="cupcake icon">
+            <br>
+            <label for="field1">
+              <span>french macaron $2</span><input type="text" name="field1"/>
+            </label>
+            <label for="field2">
+              <span>croissant $2</span><input type="email" name="field2"/>
+            </label>
+            <label for="field3">
+              <span>brioche $3</span><input type="text" name="field3"/>
+            </label>
+            <label for="field4">
+              <span>pain au chocolat $3</span><textarea name="field4" onkeyup="adjust_textarea(this)"></textarea>
+            </label>
+            <label for="field5">
+              <span>épi baguette $4</span>
+            </label>
+          </form>
+        </div>
+          <!-- end div class form  -->
+
       </div>
     </div>
     <div class="col-sm-4"></div>

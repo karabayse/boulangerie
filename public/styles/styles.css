@@ -67,7 +67,6 @@ header {
   margin-left: auto;
   margin-right: auto;
   font-family: Parisienne;
-  /* color: #787878; */
   color: White;
   text-align: center;
   font-size: 30px;
@@ -104,7 +103,6 @@ hr {
 
 .menu {
   font-family: Futura;
-  /* color: #787878; */
   color: #5C5C5C;
   min-height: 850px;
   background: linear-gradient(
@@ -181,29 +179,9 @@ footer {
   width: 75%;
 }
 
-#macarons-2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  width: 70%;
-  float: right;
-}
-
-#pie {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
-#eggs {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  width: 80%;
-  /* float: right; */
+#bakery-form {
+  opacity: .90;
+  text-align: left;
 }
 
 
@@ -223,14 +201,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
-
-#silverware {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  float: right;
 }
 
 #waffles-and-cherries {
@@ -287,7 +257,7 @@ footer {
 {
     font-family: Futura;
     font-size: 16px;
-    color: #fff;
+    color: #FFF;
 
 }
 .form-style-4 label {
