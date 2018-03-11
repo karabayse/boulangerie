@@ -21,11 +21,9 @@
 /*** SITE ***/
 
 header {
-  /* position: fixed; */
-  /* top: 0; */
   left: 0;
   margin-top: 100px;
-  /* height: 100px; */
+  z-index: 2;
 }
 
 #boulangerie {
@@ -36,6 +34,28 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: White;
+}
+
+.nav-control {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.open-nav {
+  color: #787878;
+  position: fixed;
+  margin-left: 30px;
+  z-index: 1;
+}
+
+#close-nav {
+  color: #787878;
+  float: right;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
 .vertical-menu {
@@ -43,8 +63,7 @@ header {
     margin-left: 20px;
     position: fixed;
     float: left;
-    z-index: 0;
-    /* margin-top: 100px; */
+    z-index: 1;
 }
 
 .vertical-menu a {
@@ -65,6 +84,30 @@ header {
     color: White;
   }
 
+@media only screen and (min-width: 1601px) {
+  .vertical-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .vertical-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .open-nav, #close-nav {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  .open-nav, #close-nav {
+    display: none;
+  }
+}
+
 .container {
   position: relative;
   z-index: 0;
@@ -79,7 +122,6 @@ header {
   text-align: center;
   font-size: 30px;
   background: #495C70;
-  /* width: 50%; */
 }
 
 hr {
@@ -96,6 +138,58 @@ footer {
   margin-bottom: 20px;
   position: relative;
   clear: both;
+}
+
+#social-media {
+  display: inline-block;
+  text-align: center;
+  zoom: 10%;
+}
+
+#instagram {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  float: left;
+}
+
+#pinterest {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  float: right;
+}
+
+
+
+/*** HOME ***/
+
+.home-image {
+  min-height: 850px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+  url("../styles/images/home/colored-tiles.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#logo-home {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 100px;
+  opacity: .50;
+}
+
+#tagline {
+  font-family: Parisienne;
+  color: White;
+  text-align: center;
 }
 
 
@@ -124,43 +218,17 @@ footer {
 
 /*** BAKERY ***/
 
-#macarons {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  float: right;
-}
-
 #bakery-copy {
   font-family: Futura;
   font-variant: small-caps;
   color: #787878;
   text-align: justify;
-  /* margin-top: 50px; */
-}
-
-#fancy-coffee-2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  width: 100%;
 }
 
 #brioche {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 50px; */
-  width: 100%;
-}
-
-#pie {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
   width: 100%;
 }
 
@@ -234,14 +302,11 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  /* float: right; */
 }
 
 .form-style-4{
     width: 550px;
     height: 360px;
-    /* width: 99%; */
-    /* float: right; */
     font-size: 16px;
     background: #495C70;
     padding: 30px 30px 15px 30px;
@@ -302,7 +367,7 @@ footer {
 
 .form-style-4 input[type=submit],
 .form-style-4 input[type=button]{
-    background: #576E86;
+    background: #394D61;
     border: none;
     padding: 8px 10px 8px 10px;
     border-radius: 5px;
@@ -310,7 +375,7 @@ footer {
 }
 .form-style-4 input[type=submit]:hover,
 .form-style-4 input[type=button]:hover{
-    background: #394D61;
+    background: #576E86;
 }
 
 #send-letter-button {
@@ -331,67 +396,12 @@ footer {
 
 
 
-/*** HOME ***/
-
-.home-image {
-  min-height: 850px;
-  /* height: 100vh; */
-  /* height: 80vh; */
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.05)
-    ),
-  url("../styles/images/home/colored-tiles.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#logo-home {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding-top: 100px;
-  opacity: .50;
-}
-
-#tagline {
-  font-family: Parisienne;
-  color: White;
-  text-align: center;
-}
-
-#social-media {
-  display: inline-block;
-  text-align: center;
-  zoom: 10%;
-}
-
-#instagram {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 10px;
-  float: left;
-}
-
-#pinterest {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  float: right;
-}
-
-
-
 /*** MENU ***/
 
 .menu-heading {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* width: 50%; */
   font-family: Parisienne;
   font-size: 30px;
   color: White;
