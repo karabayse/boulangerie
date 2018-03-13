@@ -12,4 +12,9 @@ router.get('/*', function(req, res) {
   res.sendFile(path.resolve('public/views/index.html'));
 }); // end router.get for index.html
 
+router.get('/contact', function(req, res) {
+  console.log('contact url hit');
+  res.sendFile(path.resolve('views/contact.html'));
+}); // end router.get for contact.html
+
 module.exports = router;

@@ -16,7 +16,7 @@
 </div>
 <!-- end class vertical-menu -->
 
-<div class="container">
+<div ng-controller="BakeryController as bc" class="container">
 
   <hr>
   <div class="page-heading">
@@ -33,19 +33,19 @@
     <div class="form">
       <form class="form-style-4" action="" method="post">
         <label for="field1">
-          <span>Enter Your Name</span><input type="text" name="field1" required="true" />
+          <span>Enter Your Name</span><input ng-model="bc.nameInput" type="text" name="field1" required="true" />
         </label>
         <label for="field2">
-          <span>Email Address</span><input type="email" name="field2" required="true" />
+          <span>Email Address</span><input ng-model="bc.emailInput" type="email" name="field2" required="true" />
         </label>
         <label for="field3">
-          <span>Short Subject</span><input type="text" name="field3" required="true" />
+          <span>Short Subject</span><input ng-model="bc.subjectInput" type="text" name="field3" required="true" />
         </label>
         <label for="field4">
-          <span>Message to Us</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+          <span>Message to Us</span><textarea ng-model="bc.messageInput" name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
         </label>
         <label>
-          <span>&nbsp;</span><input type="submit" value="Send Letter" id="send-letter-button"/>
+          <span>&nbsp;</span><input ng-click="bc.contactMessage()" type="submit" value="Send Letter" id="send-letter-button"/>
         </label>
       </form>
     </div>

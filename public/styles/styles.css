@@ -42,6 +42,8 @@ header {
 .nav-control {
   display: inline-block;
   margin-bottom: 20px;
+  position: fixed;
+  background-color: White;
 }
 
 .open-nav {
@@ -154,6 +156,7 @@ footer {
   margin-right: auto;
   padding-right: 10px;
   float: left;
+  cursor: pointer;
 }
 
 #pinterest {
@@ -161,6 +164,7 @@ footer {
   margin-right: auto;
   padding-left: 10px;
   float: right;
+  cursor: pointer;
 }
 
 
@@ -328,7 +332,7 @@ footer {
 
 }
 .form-style-4 label {
-    display:block;
+    display: block;
     margin-bottom: 10px;
 }
 .form-style-4 label > span{
@@ -356,16 +360,16 @@ footer {
     border-bottom: 1px dashed #83A4C5;
     width: 275px;
     overflow: hidden;
-    resize:none;
-    height:20px;
+    resize: none;
+    height: 20px;
 }
 
 .form-style-4 textarea:focus,
 .form-style-4 input[type=text]:focus,
 .form-style-4 input[type=email]:focus,
-.form-style-4 input[type=email] :focus
+.form-style-4 input[type=email]:focus
 {
-    border-bottom: 1px dashed #D9FFA9;
+    border-bottom: 1px dashed White;
 }
 
 .form-style-4 input[type=submit],
@@ -461,7 +465,7 @@ footer {
 
 }
 .form-style-menu label {
-    display:block;
+    display: block;
     margin-bottom: 10px;
 }
 .form-style-menu label > span{
@@ -489,16 +493,16 @@ footer {
     border-bottom: 1px dashed #83A4C5;
     width: 275px;
     overflow: hidden;
-    resize:none;
-    height:20px;
+    resize: none;
+    height: 20px;
 }
 
 .form-style-menu textarea:focus,
 .form-style-menu input[type=text]:focus,
 .form-style-menu input[type=email]:focus,
-.form-style-menu input[type=email] :focus
+.form-style-menu input[type=email]:focus
 {
-    border-bottom: 1px dashed #D9FFA9;
+    border-bottom: 1px dashed White;
 }
 
 .form-style-menu input[type=submit],

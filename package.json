@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/karabayse/boulangerie/issues"
   },
-  "homepage": "https://github.com/karabayse/boulangerie#readme"
+  "homepage": "https://github.com/karabayse/boulangerie#readme",
+  "dependencies": {
+    "mongoose": "^4.10.8"
+  }
 }
