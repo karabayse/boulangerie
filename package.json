@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/karabayse/boulangerie#readme",
   "dependencies": {
+    "express": "^4.16.3",
     "mongoose": "^4.10.8"
   }
 }
