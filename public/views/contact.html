@@ -2,12 +2,10 @@
 
 <p id="boulangerie">Boulangerie</p>
 
-<!-- <div class="nav-control"> -->
 <span class="open-nav" onclick="openNav()">&#9776;</span>
-<!-- </div> -->
 
 <div class="vertical-menu">
-  <span id="close-nav" onclick="closeNav()" >&times;</span>
+  <span id="close-nav" onclick="closeNav()">&times;</span>
   <a href="/home">home</a>
   <a href="/about">about</a>
   <a href="/bakery">bakery</a>
@@ -45,13 +43,13 @@
           <span>Message to Us</span><textarea ng-model="bc.messageInput" name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
         </label>
         <label>
-          <span>&nbsp;</span><input ng-click="bc.contactMessage()" type="submit" value="Send Letter" id="send-letter-button"/>
+          <span>&nbsp;</span><input ng-click="bc.contactMessage(); bc.openContactModal()" type="submit" value="Send Letter" id="send-letter-button"/>
         </label>
       </form>
     </div>
-    <!-- end div class form  -->
+    <!-- end class form  -->
   </div>
-<!-- end row class  -->
+<!-- end class row -->
 
   <hr>
   <div class="page-heading">
@@ -91,7 +89,7 @@
     </div>
     <div class="col-sm-4"></div>
   </div>
-  <!-- end div class row  -->
+  <!-- end class row  -->
 
   <hr>
 
@@ -103,7 +101,7 @@
   </footer>
 
 </div>
-<!-- end container class  -->
+<!-- end class container -->
 
 <script>
   function openNav() {
@@ -114,3 +112,18 @@
     document.getElementsByClassName("vertical-menu")[0].style.display = "none";
   }
 </script>
+
+<div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal-button" ng-click="bc.closeContactModal()">&times;</span>
+      <div class="modal-body">
+        <hr>
+        <p>Letter Sent!</p>
+        <hr>
+      </div>
+    </div>
+    <!-- end class modal-content -->
+</div>
+<!-- end class contact-modal -->
+
+<script src="scripts/contactModal.js" charset="utf-8"></script>

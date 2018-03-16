@@ -36,14 +36,7 @@ header {
   left: 0;
   z-index: 1;
   width: 100%;
-  background-color: White;
-}
-
-.nav-control {
-  display: inline-block;
-  margin-bottom: 20px;
-  position: fixed;
-  background-color: White;
+  background-color: #FFFFFF;
 }
 
 .open-nav {
@@ -72,7 +65,7 @@ header {
 }
 
 .vertical-menu a {
-    background-color: White;
+    background-color: #FFFFFF;
     color: #787878;
     font-family: Futura;
     display: block; /* make the links appear below each other */
@@ -86,7 +79,7 @@ header {
 
 .vertical-menu a.active {
     background-color: #8B5F65; /* add a color to the "active/current" link */
-    color: White;
+    color: #FFFFFF;
   }
 
 @media only screen and (min-width: 1601px) {
@@ -123,7 +116,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   font-family: Parisienne;
-  color: White;
+  color: #FFFFFF;
   text-align: center;
   font-size: 30px;
   background: #495C70;
@@ -195,7 +188,7 @@ footer {
 
 #tagline {
   font-family: Parisienne;
-  color: White;
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -328,7 +321,7 @@ footer {
 {
     font-family: Futura;
     font-size: 16px;
-    color: #FFF;
+    color: #FFFFFF;
 
 }
 .form-style-4 label {
@@ -369,7 +362,7 @@ footer {
 .form-style-4 input[type=email]:focus,
 .form-style-4 input[type=email]:focus
 {
-    border-bottom: 1px dashed White;
+    border-bottom: 1px dashed #FFFFFF;
 }
 
 .form-style-4 input[type=submit],
@@ -388,8 +381,52 @@ footer {
 #send-letter-button {
   font-family: Parisienne;
   font-size: 20px;
-  color: White;
+  color: #FFFFFF;
   cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+}
+
+.modal-content {
+  margin: 20% auto;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+  border-radius: 0;
+}
+
+.modal-body {
+  font-family: Parisienne;
+  text-align: center;
+  font-size: 30px;
+  color: #787878;
+}
+
+#close-modal-button {
+  color: #787878;
+  padding: 0px 10px;
+}
+
+#close-modal-button:hover, #close-modal-button:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from{opacity: 0}
+  to {opacity: 1}
 }
 
 .hours {
@@ -412,7 +449,7 @@ footer {
   margin-right: auto;
   font-family: Parisienne;
   font-size: 30px;
-  color: White;
+  color: #FFFFFF;
   text-align: center;
   background: #495C70;
 }
@@ -461,7 +498,7 @@ footer {
 {
     font-family: Futura;
     font-size: 16px;
-    color: #FFF;
+    color: #FFFFFF;
 
 }
 .form-style-menu label {
@@ -502,7 +539,7 @@ footer {
 .form-style-menu input[type=email]:focus,
 .form-style-menu input[type=email]:focus
 {
-    border-bottom: 1px dashed White;
+    border-bottom: 1px dashed #FFFFFF;
 }
 
 .form-style-menu input[type=submit],

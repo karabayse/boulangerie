@@ -19,7 +19,6 @@ myApp.controller('BakeryController', function(BakeryService) {
     }; // end contactObject
     console.log('contactObject:', contactObject);
     BakeryService.contactMessage(contactObject).then(function() {
-      sweetAlert("Letter Sent!");
       vm.nameInput = '';
       vm.emailInput = '';
       vm.subjectInput = '';
